@@ -8,4 +8,3 @@
 
 `per_behavior_summary.csv` 不重复收录harmful behavior文本和对抗后缀，需要核验时可通过 `json_file` 和 `final_record_index` 定位到原始JSON。
 
-本次压缩包内的完整控制台日志解压后约220MB，不放入GitHub。这些日志主要用于排错，统计和复核所需数据已由原始JSON保留。
