@@ -27,7 +27,7 @@
 - `Passed`：生成结果没有命中代码预设的拒答前缀，是本实验的主要 ASR 指标。
 - `EM`：生成结果精确包含预设目标字符串，判定更加严格。
 
-论文中 Vicuna-7B 的 individual harmful behavior ASR 为 99.0%。本实验使用较小的 `batch_size=16`，与论文完整配置并不完全相同，因此结果应表述为复现实验，而不是对论文数字的完全等价复现。
+论文中 Vicuna-7B 的 individual harmful behavior ASR 为 99.0%。本实验使用较小的 `batch_size=16`，与论文完整配置并不完全相同。
 
 ## 仓库结构
 
@@ -48,7 +48,7 @@
     └── run_250_individual.sh
 ```
 
-仓库保留全部10个JSON结果及可复现环境信息。完整控制台日志解压后约220MB，而且大量内容是重复的每步输出，因此不放入GitHub；逐条最终结果已整理到 `per_behavior_summary.csv`。模型权重不上传。
+仓库保留全部10个JSON结果及可复现环境信息。
 
 ## 相关资料
 
@@ -57,6 +57,3 @@
 - 之前的单条复现实验：[EYE-666/vicuna-gcg-algorithm1-reproduction](https://github.com/EYE-666/vicuna-gcg-algorithm1-reproduction)
 - GCG文献学习笔记：[EYE-666/GCG-paper-study-notes](https://github.com/EYE-666/GCG-paper-study-notes)
 
-## 说明
-
-本仓库仅用于学术研究、课程汇报和模型安全评估。
