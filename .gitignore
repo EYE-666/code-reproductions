@@ -1,0 +1,19 @@
+# Model weights and caches
+models/
+cache/
+*.bin
+*.safetensors
+
+# Large download archives
+*.tar.gz
+*.zip
+
+# Temporary files
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
