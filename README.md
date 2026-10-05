@@ -13,6 +13,8 @@
 | Batch size | 16 |
 | Top-k | 256 |
 | Test interval | 50 steps |
+| 官方代码提交 | `098262edf85f807224e70ecd87b9d83716bf6b73` |
+| GPU | NVIDIA GeForce RTX 4080 系列，32GB显存 |
 | 完成时间 | 2026-10-05 04:46:35 CST |
 
 ## 最终结果
@@ -32,14 +34,21 @@
 ```text
 .
 ├── README.md
+├── environment/
+│   ├── code_commit.txt
+│   ├── gpu_info.txt
+│   └── pip_freeze.txt
 ├── results/
+│   ├── raw/                    # 10个原始JSON结果
+│   ├── chunk_summary.csv      # 每25条一组的统计
 │   ├── metrics.csv
+│   ├── per_behavior_summary.csv # 250条逐项指标
 │   └── summary.md
 └── scripts/
     └── run_250_individual.sh
 ```
 
-完整日志和 JSON 结果将在从 AutoDL 下载并检查文件大小后加入。模型权重不上传。
+仓库保留全部10个JSON结果及可复现环境信息。完整控制台日志解压后约220MB，而且大量内容是重复的每步输出，因此不放入GitHub；逐条最终结果已整理到 `per_behavior_summary.csv`。模型权重不上传。
 
 ## 相关资料
 
